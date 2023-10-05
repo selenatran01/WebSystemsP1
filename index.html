@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link id='csslink' rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="alternate.css" type="text/css" disabled>
+    <title>Home</title>
+    <style>
+
+        header {
+            background-color: #c6e4f1;
+            color: #fff;
+            text-align: center;
+        }
+
+        header ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header ul li {
+            display: inline-block;
+            margin: 0;
+        }
+
+        header ul li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        header ul li a:hover {
+            background-color: #376ec2;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center; /* Center-align table cell content */
+        }
+        body {
+        text-align: center;
+        }
+        .rating-stars {
+            font-size: 24px;
+            color: gold; /* Change the color to your preference */
+        
+    }
+</style>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Home</h1>
+        <p>Choose a cat to learn about</p>
+        <nav>
+            <ul>
+                <li> Home </li>
+                <li><a href="Percy.html">Percy</a></li>
+                <li><a href="Salem.html">Salem</a></li>
+                <li><a href="Venus.html">Venus</a></li>
+                <li><a href="Zeus.html">Zeus</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Welcome to the Cat World</h2>
+            <div style="text-align: center;">
+                <img src="images/ALL4.JPG" alt="4 cats on a couch" width="500" style="margin: 10px;">
+                <img src="images/LazerEyesPZ.jpg" alt="Percy and Zeus" width="500" style="margin: 10px;">
+                <img src="images/CatTriangle.jpg" alt="CatTriangle" width="500" style="margin: 10px;">
+                <img src="images/Salem&Zeus.jpg" alt="Salem and Zeus" width="500" style="margin: 10px;">
+                <img src="images/SalemHiding.jpg" alt="Salem hiding from Percy" width="500" style="margin: 10px;">
+                <video src="images/StringToy.MP4" controls width="500" style="margin: 10px;"></video>
+            </div>
+        </article>
+    </main>
+    <table>
+        <caption><h2>CUTENESS SCORE TABLE</h2></caption>
+        <tr>
+            <th>Cat Name</th>
+            <th>Cuteness Points</th>
+            <th>Stars</th>
+        </tr>
+        <tr>
+            <td>Percy</td>
+            <td>5/5</td>
+            <td>
+                <span class="rating-stars" >&#9733;</span>
+                <span class="rating-stars" >&#9733;</span>
+                <span class="rating-stars" >&#9733;</span>
+                <span class="rating-stars" >&#9733;</span>
+                <span class="rating-stars" >&#9733;</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Salem</td>
+            <td>5/5</td>
+            <td>
+                <span class="rating-stars" >&#9733;</span>
+                <span class="rating-stars" >&#9733;</span>
+                <span class="rating-stars" >&#9733;</span>
+                <span class="rating-stars" >&#9733;</span>
+                <span class="rating-stars" >&#9733;</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Venus</td>
+            <td>5/5</td>
+            <td>
+                <span class="rating-stars" >&#9733;</span>
+                <span class="rating-stars" >&#9733;</span>
+                <span class="rating-stars" >&#9733;</span>
+                <span class="rating-stars" >&#9733;</span>
+                <span class="rating-stars" >&#9733;</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Zeus</td>
+            <td>5/5</td>
+            <td>
+                <span class="rating-stars" >&#9733;</span>
+                <span class="rating-stars" >&#9733;</span>
+                <span class="rating-stars" >&#9733;</span>
+                <span class="rating-stars" >&#9733;</span>
+                <span class="rating-stars" >&#9733;</span>
+            </td>
+        </tr>
+    </table>
+
+    <footer>
+
+        &copy; Favour Salako & Selena Tran/CatWorld
+
+    </footer>
+
+    <button onclick="toggleCSS()">Change Styles</button>
+
+    <script>
+
+        function toggleCSS() {
+            var currentCSS = document.getElementById('csslink');
+            if (currentCSS.getAttribute('href') == 'style.css') {
+                currentCSS.setAttribute('href', 'alternate.css');
+            } else {
+                currentCSS.setAttribute('href', 'style.css');
+            }
+        }
+        
+    </script>
+</body>
+</html>

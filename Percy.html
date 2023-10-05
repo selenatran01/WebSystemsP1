@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id='csslink' rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="alternate.css" type="text/css" disabled>
+    <title>Percy</title>
+    <style>
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        header ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header ul li {
+            display: inline-block;
+            margin: 0;
+        }
+
+        header ul li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        header ul li a:hover {
+            background-color: #555;
+
+        }
+
+        body {
+        text-align: center;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Percy</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li> Percy </li>
+                <li><a href="Salem.html">Salem</a></li>
+                <li><a href="Venus.html">Venus</a></li>
+                <li><a href="Zeus.html">Zeus</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>About Percy</h2>
+            <img src="images/Leg.JPG" alt="Percy the Tuxedo"width="400" style="margin: 10px;">
+            <h3>Here's some facts about Percy.</h3>
+            <p>Percy is 4 almost 5 years old.
+                <BR>
+                <BR> His name was Sheldon when we adopted him.
+                <BR>
+                <BR> I named him after the Percy Jackson book series.
+            </p>
+            <img src="images/PercyStareDown.JPG" alt="Percy the Tuxedo"width="400" style="margin: 10px;">
+        </article>
+    </main>
+
+    <footer>
+        &copy; Favour Salako & Selena Tran/CatWorld
+    </footer>
+
+    <button onclick="toggleCSS()">Change Styles</button>
+
+    <script>
+        function toggleCSS() {
+            var currentCSS = document.getElementById('csslink');
+            if (currentCSS.getAttribute('href') == 'style.css') {
+                currentCSS.setAttribute('href', 'alternate.css');
+            } else {
+                currentCSS.setAttribute('href', 'style.css');
+            }
+        }
+    </script>
+</body>
+</html>

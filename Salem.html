@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id='csslink' rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="alternate.css" type="text/css" disabled>
+    <title>Salem</title>
+    <style>
+        /* Add some CSS styles for the navigation tabs */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        header ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header ul li {
+            display: inline-block;
+            margin: 0;
+        }
+
+        header ul li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        header ul li a:hover {
+            background-color: #555;
+        }
+
+        body {
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Salem</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Percy.html">Percy</a></li>
+                <li> Salem </li>
+                <li><a href="Venus.html">Venus</a></li>
+                <li><a href="Zeus.html">Zeus</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>About Salem</h2>
+            <img src="images/SalemBlep.GIF" alt="Salem the Black Cat? idk "width="400" style="margin: 10px;">
+            <h3>Here's some facts about Salem.</h3>
+            <p>Salem is 6 years old.
+                <BR>
+                <BR> He was a stray that just walked up on my porch one day.
+                <BR>   
+                <BR> He has a weird obsession with trying to eat peoples hair.
+            </p>
+            <img src="images/salemsmiling.jpg" alt="Salem smiling"width="400" style="margin: 10px;">
+           
+        </article>
+    </main>
+
+    <footer>
+        &copy; Favour Salako & Selena Tran/CatWorld
+    </footer>
+
+    <button onclick="toggleCSS()">Change Styles</button>
+
+    <script>
+        function toggleCSS() {
+            var currentCSS = document.getElementById('csslink');
+            if (currentCSS.getAttribute('href') == 'style.css') {
+                currentCSS.setAttribute('href', 'alternate.css');
+            } else {
+                currentCSS.setAttribute('href', 'style.css');
+            }
+        }
+    </script>
+</body>
+</html>

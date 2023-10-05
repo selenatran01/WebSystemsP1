@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id='csslink' rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="alternate.css" type="text/css" disabled>
+    <title>Zeus</title>
+    <style>
+       
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        header ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header ul li {
+            display: inline-block;
+            margin: 0;
+        }
+
+        header ul li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        header ul li a:hover {
+            background-color: #555;
+        }
+        body {
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zeus</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Percy.html">Percy</a></li>
+                <li><a href="Salem.html">Salem</a></li>
+                <li><a href="Venus.html">Venus</a></li>
+                <li> Zeus </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>About Zeus</h2>
+            <img src="images/spookykitty.jpg" alt="Zeus the Polydactyl" width="400" style="margin: 10px;">
+            <p>Zeus is 3 years old.
+                <br>
+                <br> Zeus is a Polydactyl, which means he has extra fingers or toes.
+                <br>
+                <br> Zeus has 6 on each paw.
+            </p>
+            <img src="images/ZeusBeansss.jpg" alt="Zeus beans" width="400" style="margin: 10px;">
+
+            <!-- link to learn abt Polydactyl cats -->
+            <p>Would you like to learn more about <a href="https://en.wikipedia.org/wiki/Polydactyl_cat">Polydactyl cats</a>?</p>
+            <p>Here are some additonal facts about<a href="https://thevets.com/blog/polydactyl-cats-facts/">Polydactyl cats</a>?</p>
+        </article>
+    </main>
+
+    <footer>
+        &copy; Favour Salako & Selena Tran/CatWorld
+    </footer>
+
+    <button onclick="toggleCSS()">Change Styles</button>
+
+    <script>
+        function toggleCSS() {
+            var currentCSS = document.getElementById('csslink');
+            if (currentCSS.getAttribute('href') == 'style.css') {
+                currentCSS.setAttribute('href', 'alternate.css');
+            } else {
+                currentCSS.setAttribute('href', 'style.css');
+            }
+        }
+    </script>
+</body>
+</html>
